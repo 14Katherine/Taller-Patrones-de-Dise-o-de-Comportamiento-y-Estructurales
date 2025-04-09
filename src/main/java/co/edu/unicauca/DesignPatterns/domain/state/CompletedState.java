@@ -1,0 +1,33 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package co.edu.unicauca.DesignPatterns.domain.state;
+
+import co.edu.unicauca.DesignPatterns.domain.entities.Project;
+
+/**
+ *
+ * @author Katherine
+ */
+public class CompletedState implements ProjectState{
+     @Override
+    public void approve(Project project) {
+        System.out.println("El proyecto ya fue completado.");
+    }
+
+    @Override
+    public void reject(Project project) {
+        System.out.println("El proyecto ya fue completado.");
+    }
+
+    @Override
+    public void assign(Project project) {
+        System.out.println("El proyecto ya fue completado.");
+    }
+
+    @Override
+    public void complete(Project project) {
+        System.out.println("El proyecto ya fue completado.");
+    }
+}
